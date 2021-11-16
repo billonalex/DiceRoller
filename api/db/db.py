@@ -5,7 +5,7 @@ from datetime import datetime
 
 now = datetime.now()
 
-db_name = "fastapi.db"
+db_name = "diceroller.db"
 db_dump = "dump/dump-" + now.strftime("%Y-%m-%d") + ".sql"
 
 

@@ -1,1 +1,0 @@
-INSERT INTO utilisateur( idutilisateur, nom, prenom, adresse, codepostal, ville, pays, telephone, mail, username, password, disabled ) VALUES ( 1, 'TEST', 'Test', 'Mon adresse', 21000, 'Dijon', 'France', '06 xx xx xx xx', 'test@test.fr', 'test', '$2b$12$shMakvd5DrblXem29/oiaOiG4MwnKGVOwJDfoL0SChuS31LYycG0S', false );

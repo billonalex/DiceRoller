@@ -9,6 +9,7 @@ import uvicorn
 # Import des services
 from service.authService import auth
 from service.defaultService import DefaultService
+from service.diceService import dice
 from service.userService import utilisateur
 from db.init_db import init_db
 from db.db import dump_db
@@ -42,6 +43,7 @@ app.add_middleware(
 # Injection des services
 app.include_router(auth)
 DefaultService(app)
+app.include_router(dice)
 app.include_router(utilisateur)
 
 

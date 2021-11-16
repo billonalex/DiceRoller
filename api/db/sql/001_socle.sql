@@ -12,3 +12,10 @@ CREATE TABLE utilisateur (
 	password             text     ,
 	disabled             boolean     
  );
+ 
+CREATE TABLE dice ( 
+	iddice   		     integer PRIMARY KEY AUTOINCREMENT   ,
+	idutilisateur        integer     ,
+	valeur               integer     ,
+	FOREIGN KEY ( idutilisateur ) REFERENCES utilisateur( idutilisateur )  
+ );
